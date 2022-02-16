@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact me!</title>
+</head>
+<body>
+<form method="POST" action="{% url "contact" %}">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit">SEND</button>
+</form>
+</body>
+</html>
