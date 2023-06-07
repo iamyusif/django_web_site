@@ -1,35 +1,21 @@
 {% extends "layout.html" %}
-
 {% load static %}
-
 {% block body %}
-    
-     <!-- ======= About Section ======= -->
-     <section id="about" class="about">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-6">
-            <img src="{{ about.profile_img.url }}" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 content">
-            <h3>{{ about.heading }}</h3><br>
-
-            <ul>
-              <li><i class="bi bi-check-circle"></i> {{ about.career }}</li>
-              <li><i class="bi bi-check-circle"></i>{{ about.description }}</li>
-            </ul>
-
-            
-
-      
-              
-         
-          </div>
-        </div>
+<!-- ======= About Section ======= -->
+<section id="about" class="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <img src="{{ about.profile_img.url }}" class="img-fluid" alt="">
       </div>
-    </section><!-- End About Section -->
-
-  
-
+      <div class="col-lg-6 pt-4 pt-lg-0 content">
+        <h3>{{ about.heading }}</h3><br>
+        <ul>
+          <li><i class="bi bi-check-circle"></i> {{ about.career }}</li>
+          <li><i class="bi bi-check-circle"></i>{{ about.description }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section><!-- End About Section -->
 {% endblock %}

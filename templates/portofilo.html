@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block body %}
-    
+
 
 <section id="portfolio" class="portfolio">
   <div class="container">
@@ -12,26 +12,19 @@
       <h2>Portfolio</h2>
       <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
     </div>
-
-   
-
     <div class="row portfolio-container">
       {% for portfolio in portfolios %}
       <div class="col-lg-4 col-md-6 portfolio-item filter-app">
         <img src="{{ portfolio.image.url }}" class="img-fluid" alt="">
         <div class="portfolio-info">
-          
+
           <p>{{ portfolio.title }}</p>
-          <a href="{{ portfolio.image.url }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="{{ portfolio.title }}"><i class="bx bx-plus"></i></a>
-          
+          <a href="{{ portfolio.image.url }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"
+            title="{{ portfolio.title }}"><i class="bx bx-plus"></i></a>
         </div>
       </div>
-
-       {% endfor %}
-
-
+      {% endfor %}
     </div>
-
   </div>
 </section><!-- End Portfolio Section -->
 

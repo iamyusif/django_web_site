@@ -1,47 +1,45 @@
 {% extends "layout.html" %}
 
 {% block body %}
-    
-<section id="services" class="services section-bg">
-    <div class="container">
 
-      <div class="section-title">
-       
-        <h2>{{ services.title }}</h2>
-        <p>{{ services.content }}</p>
+<section id="services" class="services section-bg">
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>{{ services.title }}</h2>
+      <p>{{ services.content }}</p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+        <div class="icon-box">
+          <div class="icon"><i class="bx bxl-dribbble"></i></div>
+          <h4><a href="">{{ services.cart1Title}}</a></h4>
+          <p>{{ services.cart1Content}}</p>
+        </div>
       </div>
 
-      <div class="row">
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bxl-dribbble"></i></div>
-            <h4><a href="">{{ services.cart1Title}}</a></h4>
-            <p>{{ services.cart1Content}}</p>
-          </div>
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+        <div class="icon-box">
+          <div class="icon"><i class="bx bx-file"></i></div>
+          <h4><a href="">{{ services.cart2Title}}</a></h4>
+          <p>{{ services.cart2Content}}</p>
         </div>
+      </div>
 
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-file"></i></div>
-            <h4><a href="">{{ services.cart2Title}}</a></h4>
-            <p>{{ services.cart2Content}}</p>
-          </div>
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+        <div class="icon-box">
+          <div class="icon"><i class="bx bx-tachometer"></i></div>
+          <h4><a href="">{{ services.cart3Title}}</a></h4>
+          <p>{{ services.cart3Content}}</p>
         </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-tachometer"></i></div>
-            <h4><a href="">{{ services.cart3Title}}</a></h4>
-            <p>{{ services.cart3Content}}</p>
-          </div>
-        </div>
-
-
-
       </div>
 
     </div>
-  </section><!-- End Services Section -->
+
+  </div>
+</section><!-- End Services Section -->
 
 
 {% endblock %}
